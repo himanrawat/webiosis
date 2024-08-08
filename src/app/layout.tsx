@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import FloatingNavbar from "@/components/FloatingNavbar";
+import { ThemeProvider } from "@/components/ThemeContext";
+import ThemeToggleButton from "@/components/ThemeToggleButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <ThemeProvider>
+        <body className={inter.className}>
+          <div className="relative w-full flex justify-center items-center">
+            <FloatingNavbar />
+          </div>
+          {children}
+          <ThemeToggleButton />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
