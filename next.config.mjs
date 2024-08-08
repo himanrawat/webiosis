@@ -3,6 +3,7 @@ const nextConfig = {
 	images: {
 		domains: ["aceternity.com", "assets.aceternity.com", "images.unsplash.com"],
 	},
+	distDir: "build",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
