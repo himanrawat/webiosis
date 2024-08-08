@@ -30,4 +30,4 @@ jobs:
         repoToken: '${{ secrets.GITHUB_TOKEN }}'
         firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
         projectId: 'webiosis'  # Ensure this matches your actual Firebase project ID
-        channelId: 'preview'  # Add a channelId
+        channelId: 'preview'  # Add a default channelId
