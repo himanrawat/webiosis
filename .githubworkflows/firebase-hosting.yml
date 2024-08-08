@@ -1,0 +1,32 @@
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches:
+      - master  # or the branch you want to deploy
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Specify the Node.js version
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build  # Adjust this command if your build script is different
+
+    - name: Deploy to Firebase
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+        projectId: 'fir-demo-project'
