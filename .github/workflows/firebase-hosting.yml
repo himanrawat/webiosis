@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Build project
-      run: npm run build  # Adjust this command if your build script is different
+      run: npm run build  # This will create the static files in the 'build' directory
 
     - name: Deploy to Firebase
       uses: FirebaseExtended/action-hosting-deploy@v0

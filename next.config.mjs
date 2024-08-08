@@ -3,7 +3,8 @@ const nextConfig = {
 	images: {
 		domains: ["aceternity.com", "assets.aceternity.com", "images.unsplash.com"],
 	},
-	distDir: "build", // Ensure this matches the directory in firebase.json
+	distDir: "build",
+	output: "export",
 };
 
 export default nextConfig;
