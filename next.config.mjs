@@ -1,10 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ["aceternity.com", "assets.aceternity.com", "images.unsplash.com"],
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "aceternity.com",
+			},
+			{
+				protocol: "https",
+				hostname: "assets.aceternity.com",
+			},
+			{
+				protocol: "https",
+				hostname: "images.unsplash.com",
+			},
+		],
 	},
 	distDir: "build",
-	output: "export",
+	// output: 'export',
 };
 
 export default nextConfig;
