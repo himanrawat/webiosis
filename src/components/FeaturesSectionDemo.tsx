@@ -18,9 +18,9 @@ export function FeaturesSectionDemo() {
 			icon: <IconCode color="orange" />,
 		},
 		{
-			title: "QA and Testing",
+			title: "Strategy & Consulting",
 			description:
-				"Make your technology bulletproof, with manual and automated testing.",
+				"Define and deliver value with cutting edge technology. Reinvent your business model. Transform your business according to new environment.",
 			icon: <IconBug color="orange" />,
 		},
 		{
