@@ -11,7 +11,7 @@ export function InfiniteMovingCardsDemo() {
 				Yes. We cover your tech stack.
 			</h2>
 			<p className="lg:w-[30vw] w-full text-center text-2xl mt-8 mb-16 lg:p-0 px-4">
-				Our 4,000+ team has expertise in almost every programming language.
+				Our team has expertise in almost every programming language.
 			</p>
 			<InfiniteMovingCards items={firstLine} direction="right" speed="slow" />
 			<InfiniteMovingCards items={secondLine} direction="left" speed="slow" />

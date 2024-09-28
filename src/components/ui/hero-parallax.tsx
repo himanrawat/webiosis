@@ -96,7 +96,7 @@ export const Header = () => {
 		<div className="max-w-7xl relative mx-auto px-4 w-full left-0 top-0">
 			<h1 className="text-2xl md:text-7xl font-semibold md:w-3/4 text-black dark:text-white md:leading-tight">
 				Accelerate Your Roadmap With Our Vetted{" "}
-				<span className="text-[#F66135] block">Tech Talent.</span>
+				<span className="text-[#F66135] block">Nearshore Tech Talent.</span>
 			</h1>
 
 			<p className="max-w-2xl text-lg md:text-2xl my-8 text-neutral-800 dark:text-neutral-200">
