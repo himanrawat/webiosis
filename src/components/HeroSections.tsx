@@ -2,6 +2,7 @@
 import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 import schoolErp from "@/assets/schoolerp.png";
+import Iamart from "@/assets/I-Am-Art.png";
 
 const HeroSections = () => {
 	return <HeroParallax products={products} />;
@@ -9,15 +10,14 @@ const HeroSections = () => {
 
 export const products = [
 	{
-		title: "Moonbeam",
+		title: "School ERP",
 		link: "#",
 		thumbnail: schoolErp.src,
 	},
 	{
-		title: "Cursor",
-		link: "#",
-		thumbnail:
-			"https://aceternity.com/images/products/thumbnails/new/cursor.png",
+		title: "I Am Art",
+		link: "https://iamart-ochre.vercel.app/",
+		thumbnail: Iamart.src,
 	},
 	{
 		title: "School ERP",
