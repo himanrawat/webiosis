@@ -2,7 +2,7 @@
 
 import React from "react";
 import CtaButton from "./CtaButton";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/webiosis-white.svg";
 import Image from "next/image";
 import {
 	IconArrowRight,
