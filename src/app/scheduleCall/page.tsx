@@ -126,7 +126,7 @@ export default function ScheduleCall() {
 			<div className="max-w-xl mx-auto mt-8 ">
 				<Image src={logo} alt="logo" className="w-44" />
 				<p className="text-neutral-600 text-lg mt-2 dark:text-neutral-300">
-					Thank you for your interest in Webiosis. We'd like to ask a few
+					Thank you for your interest in Webiosis. We&apos;d like to ask a few
 					questions to better understand your software development needs.
 				</p>
 
