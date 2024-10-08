@@ -3,6 +3,7 @@ import CardsContainer from "@/components/CardsContainer";
 import { FeaturesSectionDemo } from "@/components/FeaturesSectionDemo";
 import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
 import Footer from "@/components/Footer";
+import Steps from "@/components/Steps";
 
 export default function Home() {
 	return (
@@ -13,6 +14,7 @@ export default function Home() {
 			<FeaturesSectionDemo />
 			<InfiniteMovingCardsDemo />
 			<CardsContainer />
+			<Steps />
 			<Footer />
 		</>
 	);
