@@ -12,6 +12,7 @@ import {
 	IconBrandWhatsapp,
 } from "@tabler/icons-react";
 import { TextHoverEffect } from "./ui/text-hover-effect";
+import Link from "next/link";
 
 const Footer = () => {
 	return (
@@ -47,9 +48,12 @@ const Footer = () => {
 						<button className="px-6 py-4 border-2 rounded-full dark:border-white border-black w-full lg:w-fit mx-4 transition-all duration-300 ease-in-out hover:bg-black hover:text-white dark:hover:bg-orange hover:text-xl">
 							Contact Us
 						</button>
-						<button className="flex justify-center items-center py-4 px-4 bg-orange rounded-full hover:border-white hover:border-2 border-2 border-orange hover:text-xl text-white text-lg mx-4 transition-all duration-300 ease-in-out w-full lg:w-fit lg:my-0 my-4">
+						<Link
+							href="/scheduleCall"
+							className="flex justify-center items-center py-4 px-4 bg-orange rounded-full hover:border-white hover:border-2 border-2 border-orange hover:text-xl text-white text-lg mx-4 transition-all duration-300 ease-in-out w-full lg:w-fit lg:my-0 my-4"
+						>
 							Schedule a Call <IconArrowRight />
-						</button>
+						</Link>
 					</div>
 					<div>
 						<p className="text-lg my-4">

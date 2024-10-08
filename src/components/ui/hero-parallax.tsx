@@ -102,9 +102,12 @@ export const Header = () => {
 			<p className="max-w-2xl text-lg md:text-2xl my-8 text-neutral-800 dark:text-neutral-200">
 				Access software engineers with experience in cutting edge technology
 			</p>
-			<button className="bg-orange px-4 py-4 rounded-lg mt-8 z-[1000] relative">
+			<Link
+				href="/scheduleCall"
+				className="bg-orange px-4 py-4 rounded-lg mt-8 z-[1000] relative"
+			>
 				Schedule a call
-			</button>
+			</Link>
 		</div>
 	);
 };

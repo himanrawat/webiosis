@@ -81,13 +81,13 @@ export const FloatingNav = ({
 							</Link>
 						))}
 					</div>
-					<button
+					<Link
+						href="/scheduleCall"
 						className="border text-sm font-medium relative border-black dark:border-white/[0.2] text-orange dark:text-orange px-4 py-2 rounded-full bg-black"
-						onClick={handleScheduleClick}
 					>
 						<span>Schedule a Call</span>
 						<span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-orange to-transparent h-px" />
-					</button>
+					</Link>
 				</motion.div>
 			</AnimatePresence>
 

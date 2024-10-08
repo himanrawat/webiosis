@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Steps = () => {
 	return (
-		<div className="flex w-full justify-center p-8">
+		<div className="flex w-full justify-center p-8 mb-32">
 			<div className="relative">
 				<StepsStructure
 					icon={phone}
@@ -31,7 +31,7 @@ const Steps = () => {
 				<div className="flex items-start ml-[38.5px]">
 					<div className="w-16 h-8 border-l-[3.3px] border-b-[3.3px] border-dashed border-white"></div>
 					<Link
-						href="/"
+						href="/scheduleCall"
 						className="bg-orange text-white py-4 px-6 rounded-xl text-lg font-semibold hover:bg-orange-600 transition-colors"
 					>
 						Schedule a Call

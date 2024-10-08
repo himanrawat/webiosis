@@ -3,12 +3,10 @@ import React from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
-import {
-	IconBrandGithub,
-	IconBrandGoogle,
-	IconBrandOnlyfans,
-} from "@tabler/icons-react";
+import logo from "@/assets/webiosis-logo-1.svg";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import Image from "next/image";
+import FloatingNavbar from "@/components/FloatingNavbar";
 
 const GradientTextarea = React.forwardRef<
 	HTMLTextAreaElement,
@@ -124,58 +122,58 @@ export default function ScheduleCall() {
 		console.log("Form submitted");
 	};
 	return (
-		<div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
-			<h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
-				Webiosis
-			</h2>
-			<p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-				Thank you for your interest in Webiosis. We'd like to ask a few
-				questions to better understand your software development needs.
-			</p>
+		<>
+			<div className="max-w-xl mx-auto mt-8 ">
+				<Image src={logo} alt="logo" className="w-44" />
+				<p className="text-neutral-600 text-lg mt-2 dark:text-neutral-300">
+					Thank you for your interest in Webiosis. We'd like to ask a few
+					questions to better understand your software development needs.
+				</p>
 
-			<form className="my-8" onSubmit={handleSubmit}>
-				<LabelInputContainer className="mb-4">
-					<Label htmlFor="firstname">Your name</Label>
-					<Input id="firstname" placeholder="Your name" type="text" />
-				</LabelInputContainer>
+				<form className="my-8" onSubmit={handleSubmit}>
+					<LabelInputContainer className="mb-8">
+						<Label htmlFor="firstname">Your name</Label>
+						<Input id="firstname" placeholder="Your name" type="text" />
+					</LabelInputContainer>
 
-				<LabelInputContainer className="mb-4">
-					<Label htmlFor="email">Your work email</Label>
-					<Input id="email" placeholder="Your work email" type="email" />
-				</LabelInputContainer>
+					<LabelInputContainer className="mb-8">
+						<Label htmlFor="email">Your work email</Label>
+						<Input id="email" placeholder="Your work email" type="email" />
+					</LabelInputContainer>
 
-				<LabelInputContainer className="mb-4">
-					<Label htmlFor="service">Select your service</Label>
-					<div className="flex gap-2">
-						<GradientRadio name="service" value="staff">
-							Staff
-						</GradientRadio>
-						<GradientRadio name="service" value="dedicated-teams">
-							Dedicated Teams
-						</GradientRadio>
-						<GradientRadio name="service" value="software-outsourcing">
-							Software Outsourcing
-						</GradientRadio>
-					</div>
-				</LabelInputContainer>
+					<LabelInputContainer className="mb-8">
+						<Label htmlFor="service">Select your service</Label>
+						<div className="flex gap-2">
+							<GradientRadio name="service" value="staff">
+								Staff
+							</GradientRadio>
+							<GradientRadio name="service" value="dedicated-teams">
+								Dedicated Teams
+							</GradientRadio>
+							<GradientRadio name="service" value="software-outsourcing">
+								Software Outsourcing
+							</GradientRadio>
+						</div>
+					</LabelInputContainer>
 
-				<LabelInputContainer className="mb-4">
-					<Label htmlFor="details">How can we help?</Label>
-					<GradientTextarea
-						id="details"
-						placeholder="Tell us how we can help?"
-					/>
-				</LabelInputContainer>
+					<LabelInputContainer className="mb-8">
+						<Label htmlFor="details">How can we help?</Label>
+						<GradientTextarea
+							id="details"
+							placeholder="Tell us how we can help?"
+						/>
+					</LabelInputContainer>
 
-				<button
-					className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-					type="submit"
-				>
-					Submit &rarr;
-					<BottomGradient />
-				</button>
-			</form>
-		</div>
+					<button
+						className="bg-gradient-to-br relative group/btn from-black dark:from-zinc-900 dark:to-zinc-900 to-neutral-600 block dark:bg-zinc-800 w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+						type="submit"
+					>
+						Submit &rarr;
+						<BottomGradient />
+					</button>
+				</form>
+			</div>
+		</>
 	);
 }
 
