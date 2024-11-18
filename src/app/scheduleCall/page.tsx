@@ -144,9 +144,6 @@ export default function ScheduleCall() {
 					<LabelInputContainer className="mb-8">
 						<Label htmlFor="service">Select your service</Label>
 						<div className="flex gap-2">
-							<GradientRadio name="service" value="staff">
-								Staff
-							</GradientRadio>
 							<GradientRadio name="service" value="dedicated-teams">
 								Dedicated Teams
 							</GradientRadio>

@@ -8,26 +8,29 @@ import ThemeToggleButton from "@/components/ThemeToggleButton";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Webiosis",
-  description: "Created By Webiosis",
+	title: "Webiosis",
+	description: "Created By Webiosis",
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <ThemeProvider>
-        <body className={inter.className}>
-          <div className="relative w-full flex justify-center items-center">
-            <FloatingNavbar />
-          </div>
-          {children}
-          <ThemeToggleButton />
-        </body>
-      </ThemeProvider>
-    </html>
-  );
+	return (
+		<html lang="en" suppressHydrationWarning>
+			<body
+				className={`${inter.className} overflow-x-hidden`}
+				suppressHydrationWarning
+			>
+				<ThemeProvider>
+					<div className="relative w-full flex justify-center items-center">
+						<FloatingNavbar />
+					</div>
+					{children}
+					<ThemeToggleButton />
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }

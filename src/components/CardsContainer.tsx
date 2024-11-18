@@ -27,7 +27,7 @@ export default function CardContainer() {
 				<div className="">
 					<div className="border-b-2">
 						<button className="flex gap-4 group w-fit h-fit py-4 pr-4 transition-transform duration-300 transform hover:translate-x-4">
-							Over 1,100 articles on technology and talent <IconArrowRight />
+							View All <IconArrowRight />
 						</button>
 					</div>
 				</div>
@@ -71,34 +71,42 @@ const DummyContent = () => {
 
 const data = [
 	{
-		category: "Artificial Intelligence",
-		title: "You can do more with AI.",
-		src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		category: "Development",
+		title: "Tailored Software Solutions: Front-End to Back-End Expertise",
+		src: "https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		content: <DummyContent />,
 	},
 	{
-		category: "Productivity",
-		title: "Enhance your productivity.",
-		src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		category: "Strategy & Consulting",
+		title: "Revolutionize Your Business with Cutting-Edge Technology",
+		src: "https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		content: <DummyContent />,
 	},
 	{
-		category: "Product",
-		title: "Launching the new Apple Vision Pro.",
-		src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		category: "Design",
+		title: "Crafting Intuitive and Engaging UX/UI Designs",
+		src: "https://img.freepik.com/free-photo/man-working-with-computer-side-view_23-2149930994.jpg?t=st=1731907015~exp=1731910615~hmac=5f4991dd9777f9fa25f12d172c7665e269c7ccad8e18c17a01e88950f92dd003&w=996",
+		content: <DummyContent />,
+	},
+	{
+		category: "Development",
+		title: "Unlock Business Value with Advanced AI and Data Engineering",
+		src: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=1896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		content: <DummyContent />,
 	},
 
 	{
-		category: "Product",
-		title: "Maps for your iPhone 15 Pro Max.",
-		src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		category: "Development",
+		title: "Scalable and Secure Mobile Apps for iOS and Android",
+		src: "https://img.freepik.com/free-photo/ui-ux-representations-with-smartphone_23-2150201874.jpg?t=st=1731906579~exp=1731910179~hmac=28d448b597f6011b4719473afd8c686b84df478ed8282616c3e3c49463524fd4&w=740",
 		content: <DummyContent />,
 	},
+
 	{
-		category: "iOS",
-		title: "Photography just got better.",
-		src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		category: "Platform & Infrastructure",
+		title:
+			"Secure, Reliable, and Scalable Solutions with DevOps & Security Expertise",
+		src: "https://img.freepik.com/free-photo/saas-concept-collage_23-2149399295.jpg?t=st=1731907259~exp=1731910859~hmac=a89aa6c006b3b227714871636c8933477db08e624b756cec736e93f3815ea07d&w=996",
 		content: <DummyContent />,
 	},
 	{

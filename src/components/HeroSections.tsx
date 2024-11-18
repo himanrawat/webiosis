@@ -20,7 +20,7 @@ export const products = [
 		thumbnail: Iamart.src,
 	},
 	{
-		title: "School ERP",
+		title: "School ERP System",
 		link: "#",
 		thumbnail: schoolErp.src,
 	},
