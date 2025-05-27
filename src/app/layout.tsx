@@ -24,9 +24,6 @@ export default function RootLayout({
 				suppressHydrationWarning
 			>
 				<ThemeProvider>
-					<div className="relative w-full flex justify-center items-center">
-						<FloatingNavbar />
-					</div>
 					{children}
 					<ThemeToggleButton />
 				</ThemeProvider>
